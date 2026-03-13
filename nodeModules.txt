@@ -1,0 +1,26 @@
+A module is a file or unit of code that contains functions, classes, or variables which can be reused by importing it into another program.
+
+Types of modules:
+1.Built in modules
+2.External modules/3rd party modules
+3.custom modules
+
+Built in modules:
+1.File System module(fs)
+  to load the file system module we do const fs=require('fs')
+  this fs is object which have many functions
+
+  nodejs will read the source file first,internally node js has a wrapper function whose prototype is
+           function wrapper(export,require,module,__fileName,__dirName){
+
+	   }
+          wrapper()
+   and to this whatever is our source code that source code is injected to the this wrapper-->then the nodejs will execute the code by calling the wrapper funtion
+since the wrapper function has one parameter called require we are able to use require() and this is the reason if we execute the code having require etc would not work in browser
+
+how the require('<module_name>') is done is
+first it will check in the 3rd party modules if exist it will use from that
+then it will check in the built in modules if exist it will use from that
+else it will throw and error
+
+for custom modules ->require('./modulename.js')or('../modulename.js')
