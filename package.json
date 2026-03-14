@@ -1,0 +1,23 @@
+{
+  "name": "modules",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/niraj734/nodejs_modules_info#readme",
+  "bugs": {
+    "url": "https://github.com/niraj734/nodejs_modules_info/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/niraj734/nodejs_modules_info.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "@types/node": "^25.5.0"
+  }
+}
