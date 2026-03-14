@@ -25,3 +25,10 @@ fs.mkdirSync("developer/coder/programmer",{recursive:true})
 fs.unlinkSync("copy.txt")
 
 //similarly there are more functions that fs module provide to work with file systems
+
+fs.readFile("nodeModules.txt","utf-8",function(error,data){
+    if(error)console.log(error)
+    else(console.log(data))
+        
+    
+})
